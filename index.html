@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <link rel="shortcut icon" href="https://i.ibb.co/Tg81bkx/fn.png" type="image/x-icon">
+    <title>Try You</title>
+    <style>
+        * {
+            background-color: #000;
+            color: white;
+        }
+
+        body{
+            width: 95%;
+            margin: 0 auto;
+        }
+        .div1 {
+            color: white;
+            width: 90%;
+            margin: 40px auto;
+        }
+
+        .title {
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .input-output {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .input-div {
+            width: 48%;
+        }
+
+        .input-title {
+            font-size: 24px;
+        }
+
+        .textarea {
+            border: 2px solid white;
+            width: 100%;
+            height: 50vh;
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            border: 2px solid white;
+            width: 50%;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 10px 25%;
+            font-size: 18px;
+        }
+
+        @media screen and (max-width: 450px) {
+            .input-output {
+                display: block;
+            }
+
+            .input-div {
+                width: 100%;
+            }
+            .div1{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <h1 class="title">Try Your Self</h1>
+        <div class="input-output">
+            <div class="input-div">
+                <div>
+                    <h3 class="input-title" for="">Write your Code ?</h3>
+                    <textarea class="textarea"
+                    
+                    name="" id="input" cols="" rows=""></textarea>
+                </div>
+                <button class="border border-white py-3 px-6 text-xl rounded" onclick="mgq('input')">Output</button>
+            </div>
+            <div class="input-div">
+                <h3 class="input-title" for="">Output</h3>
+                <p class="textarea" id="demo"></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function mgq(y) {
+            document.getElementById("demo").innerHTML = document.getElementById(y).value;
+        }
+    </script>
+
+</body>
+
+</html>
