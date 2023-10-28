@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://i.ibb.co/Tg81bkx/fn.png" type="image/x-icon">
     <title>Try You</title>
     <style>
@@ -11,10 +12,11 @@
             color: white;
         }
 
-        body{
+        body {
             width: 95%;
             margin: 0 auto;
         }
+
         .div1 {
             color: white;
             width: 90%;
@@ -48,8 +50,11 @@
             border-radius: 10px;
             padding: 10px;
             font-size: 16px;
+            background-color: white;
+            color: black;
         }
-        .overflow{
+
+        .overflow {
             overflow: scroll;
         }
 
@@ -71,7 +76,8 @@
             .input-div {
                 width: 100%;
             }
-            .div1{
+
+            .div1 {
                 width: 100%;
             }
         }
@@ -85,11 +91,10 @@
             <div class="input-div">
                 <div>
                     <h3 class="input-title" for="">Write your Code ?</h3>
-                    <textarea class="textarea"
-                    
-                    name="" id="input" cols="" rows=""></textarea>
+                    <textarea class="textarea" placeholder="Write your code here" name="" id="input" cols=""
+                        rows=""></textarea>
                 </div>
-                <button class="border border-white py-3 px-6 text-xl rounded" onclick="mgq('input')">Output</button>
+                <button class="border border-white py-3 px-6 text-xl rounded" onclick="mgq('input')">Run</button>
             </div>
             <div class="input-div">
                 <h3 class="input-title" for="">Output</h3>
